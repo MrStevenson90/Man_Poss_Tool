@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.controls, .team-buttons, .possession-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    font-family: 'Monaco', 'Courier New', monospace;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #888;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for better readability */
+}
+
+.team-buttons button {
+    width: 120px; /* Larger buttons for team selection */
+    height: 50px;
+    font-size: 20px;
+}
+
+#possessionBar {
+    height: 30px;
+    width: 100%;
+    background-color: #555;
+    position: relative;
+    display: flex;
+}
+
+#possessionLP, #possessionRM {
+    height: 100%;
+    transition: width 0.5s ease-in-out; /* Smooth transition for width adjustments */
+}
+
+.possession-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 24px; /* Larger font size for the possession info */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}

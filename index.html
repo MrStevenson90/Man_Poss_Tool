@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Possession Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Possession Tracker</h1>
+        </header>
+        <div class="controls">
+            <button id="btnStart">Start</button>
+            <button id="btnStop">Stop</button>
+            <button id="btnUp">▲</button>
+            <span id="matchClock">00:00</span>
+            <button id="btnDown">▼</button>
+        </div>
+        <div class="team-buttons">
+            <button id="teamLP" class="btnTeam" style="background-color: red;">LP</button>
+            <button id="teamRM" class="btnTeam" style="background-color: grey;">RM</button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="possession-display">
+            <div id="possessionBar">
+                <div id="possessionLP" style="width: 50%; background-color: red;"></div>
+                <div id="possessionRM" style="width: 50%; background-color: grey;"></div>
+                <br />
+                <br />
+                <br />
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="possession-info">
+                <span id="possessionLPText">LP: 50%</span>
+                <br />
+                <br />
+                <span id="possessionRMText">RM: 50%</span>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <table id="possessionLog">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>LP Time</th>
+                    <th>LP %</th>
+                    <th>RM Time</th>
+                    <th>RM %</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
